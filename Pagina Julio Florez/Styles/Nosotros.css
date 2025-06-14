@@ -8,6 +8,19 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* === GLOBAL STYLES === */
+:root {
+    --primary: #c6302f;
+    --secondary: #6c757d;
+    --background: #f8f9fa;
+    --light: #ffffff;
+    --dark: #212529;
+    --muted: #adb5bd;
+    --radius: 12px;
+    --shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+
 /* Navbar general */
 .navbar {
     display: flex;
@@ -168,6 +181,24 @@ body {
 
 
 /* === FOOTER === */
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+
+
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
 footer {
     background-color: var(--dark);
     color: var(--light);
