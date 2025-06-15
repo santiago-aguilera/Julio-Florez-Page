@@ -87,7 +87,7 @@ body {
     font-size: 14px;
 }
 
-/* Eliminar márgenes internos de <li> si los hubiera */
+/* Eliminar márgenes internos de <li> */
 .top-links ul li,
 .bottom-links ul li {
     margin: 0;
