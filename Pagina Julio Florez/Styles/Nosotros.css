@@ -325,13 +325,15 @@ a:hover {
     border-left: 5px solid #c6302f;
 }
 
-.linea img{
-    width: 700px;
-    height: auto;
-    background-color: #c6302f;
-    margin: 1rem 0;
+.linea{
+    max-height: 1100px; 
+    width: 900px;      /* <<--- Esto define el alto visible */
+    overflow-y: auto;        /* <<--- Habilita el scroll vertical */
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    background-color: var(--color-light-bg);
 }
-
 
 /* === FOOTER === */
 footer {
