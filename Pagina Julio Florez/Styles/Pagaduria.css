@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === GLOBAL STYLES === */
+:root {
+    --primary: #c6302f;
+    --secondary: #6c757d;
+    --background: #f8f9fa;
+    --light: #ffffff;
+    --dark: #212529;
+    --muted: #adb5bd;
+    --radius: 12px;
+    --shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Navbar general */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #c02727;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+}
+
+/* Sección izquierda (logo) */
+.left-section img {
+    max-height: 60px;
+    /* Ajusta la altura máxima del logo */
+    width: auto;
+    /* Mantiene la proporción del logo */
+    margin-right: 20px;
+    background-color:  #ffffff;
+    
+}
+
+/* Sección derecha (redes + menú) */
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* hace que los ul ocupen todo el ancho */
+    justify-content: center;
+    gap: 8px;
+    background-color:#ffffff;
+    flex-grow: 1;
+}
+
+/* Redes sociales (arriba) y páginas (abajo) */
+.top-links ul,
+.bottom-links ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    list-style: none;
+    width: 100%;
+}
+
+/* Línea separadora larga */
+.top-links ul {
+    border-bottom: 2px solid #999;
+    /* más gruesa y visible */
+    padding-bottom: 6px;
+    /* menos espacio inferior */
+    margin-bottom: 0;
+    
+}
+
+.bottom-links ul {
+    padding-top: 2px;
+    margin-top: 0;
+}
+
+/* Estilo general de los enlaces */
+.right-section a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.right-section a:hover {
+    color: #0a7227;
+}
+
+/* Íconos */
+.right-section i {
+    margin-right: 4px;
+    font-size: 14px;
+}
+
+/* Eliminar márgenes internos de <li> si los hubiera */
+.top-links ul li,
+.bottom-links ul li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Scroll*/
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    background-color: white;
+    transition: transform 0.3s ease;
+
+    /* o el color de tu navbar */
+}
+
+/* Ocultar el navbar */
+.navbar.hide {
+    transform: translateY(-100%);
+}
+/* Estilo para el enlace principal del dropdown */
+.navbar .nav-link.dropdown-toggle {
+    color: #333;
+    font-weight: 500;
+    padding: 10px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-link.dropdown-toggle:hover {
+    background-color: #f0f0f0;
+    color: #007BFF;
+}
+
+/* Barra de navegación */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand img {
+    height: 48px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #333 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #c6302f !important;
+}
+.navbar {
+    box-shadow: var(--shadow);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section img {
+    max-height: 60px;
+}
+
+.right-section {
+    display: flex;
+    gap: 1.5rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.right-section div:hover {
+    cursor: pointer;
+    color: #c6302f;
+}
+
+
+:root {
+    --primary-color: #ffebee; /* Rojo muy claro principal para el fondo */
+    --header-bg-color: #ef5350; /* Rojo vibrante para el encabezado */
+    --card-bg-color: #ffffff; /* Fondo blanco para las tarjetas */
+    --card-border-color: #ffcdd2; /* Rojo claro para el borde de la tarjeta */
+    --text-color: #333; /* Texto oscuro para el contraste */
+    --heading-color: #d32f2f; /* Rojo más oscuro para títulos */
+    --accent-color: #ef9a9a; /* Un tono de rosa/rojo suave para iconos/separadores */
+    --button-bg-color: #ef5350; /* Rojo del botón */
+    --button-text-color: #fff;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--header-bg-color);
+    color: var(--white-color);
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto 4rem auto; /* Más espacio abajo para evitar que el contenido se pegue al borde */
+    padding: 0 1.5rem;
+    flex-grow: 1; /* Permite que el contenedor ocupe el espacio disponible */
+}
+
+.info-card {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--card-border-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    overflow: hidden; /* Asegura que el contenido oculto no se vea */
+    transition: box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: var(--primary-color); /* Un tono más suave para el encabezado de la tarjeta */
+    cursor: pointer;
+    border-bottom: 1px solid var(--card-border-color);
+    transition: background-color 0.3s ease;
+}
+
+.info-card.active .card-header {
+    background-color: var(--accent-color); /* Cambia de color cuando la tarjeta está activa */
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: var(--heading-color);
+    border-bottom: none; /* Eliminar el borde de los h2 aquí */
+    padding-bottom: 0;
+    font-weight: 600;
+}
+
+.toggle-icon {
+    font-size: 2rem;
+    color: var(--heading-color);
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.info-card.active .toggle-icon {
+    transform: rotate(45deg); /* Gira el '+' para que parezca una 'x' o un '-' */
+}
+
+.card-content {
+    max-height: 0; /* Inicialmente oculto */
+    overflow: hidden;
+    padding: 0 2rem; /* El padding horizontal siempre visible */
+    transition: max-height 0.4s ease-out, padding-top 0.4s ease-out, padding-bottom 0.4s ease-out;
+}
+
+.info-card.active .card-content {
+    max-height: 550px; /* Suficientemente grande para la mayoría de los contenidos */
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.card-content p {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.card-content ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.card-content ul li {
+    margin-bottom: 0.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background-color: #c62828; /* Rojo más oscuro al pasar el mouse */
+    transform: translateY(-2px);
+}
+
+
+/* === FOOTER === */
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+
+
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+/* Footer styles */
+
+.footer {
+    background-color: #c6302f;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffff00;
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: none;
+    line-height: 1.6;
+}
+
+.footer-section a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons a img {
+    width: 24px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 13px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+footer .container {
+    display: inline-flex;
+}
+
+.container .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 100;
+    margin: 0 20px;
+}
+
+.container .icon span {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background-color: #444;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.container .icon span i {
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.container .icon:hover span i {
+    color: #8a8888e4;
+}
+
+.container .icon .tooltip {
+    background-color: #8a8888e4;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.container .icon:hover .tooltip {
+    opacity: 1;
+    top: -70px;
+    pointer-events: none;
+}

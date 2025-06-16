@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Styles/Styles.css">
+    <link rel="stylesheet" href="../Styles/Pagaduria.css">
     <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -45,15 +45,127 @@
                     <li><a href="Pagaduria.html" target="_blank">Pagaduria</a></li>
                     <li><a href="Orientacion.html" target="_blank">Orientacion Escolar</a>
                     </li>
-                    <li><a href="https://citdjulioflorez.edu.co/BDJulioFlorez/Public/Index.php?Ctrll=Paginas&&Func=Matricula" target="_blank">Matriculas</a></li>
+                    <li><a href="https://citdjulioflorez.edu.co/BDJulioFlorez/Public/Index.php?Ctrll=Paginas&&Func=Matricula"
+                            target="_blank">Matriculas</a></li>
                 </ul>
             </div>
         </div>
     </nav><br>
 
-!--after--!
+    <!--inicio-->
+    <header>
+        <h1>Pagaduría Escolar</h1>
+        <p>Tu Guía Rápida para Entender la Gestión Financiera Educativa</p>
+    </header>
 
+    <div class="container">
+        <div class="info-card" id="que-es">
+            <div class="card-header">
+                <h2>¿Qué es la Pagaduría Escolar?</h2>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="card-content">
+                <p>La pagaduría escolar es el departamento fundamental encargado de la administración financiera de
+                    una institución educativa, gestionando los pagos y asegurando la transparencia en el manejo de los
+                    recursos económicos.</p>
+                <p>Se encarga de:</p>
+                <ul>
+                    <li>Administrar la recaudación de matrículas y pensiones.</li>
+                    <li>Gestionar pagos de actividades extracurriculares y otros servicios.</li>
+                    <li>Realizar el seguimiento de cuentas por cobrar.</li>
+                    <li>Emitir informes financieros clave.</li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="info-card" id="importancia">
+            <div class="card-header">
+                <h2>La Importancia de una Gestión Eficiente</h2>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="card-content">
+                <p>Una gestión eficiente de la pagaduría escolar es vital para la sostenibilidad y el buen
+                    funcionamiento de la escuela. Impacta directamente en:</p>
+                <ul>
+                    <li>Garantizar la estabilidad financiera para operaciones y proyectos educativos.</li>
+                    <li>Optimizar la asignación de recursos económicos hacia donde más se necesitan.</li>
+                    <li>Mejorar la relación con padres y tutores a través de una comunicación financiera clara y
+                        sencilla.</li>
+                    <li>Fomentar la **confianza y la credibilidad en la administración escolar.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="info-card" id="funciones">
+            <div class="card-header">
+                <h2>Funciones Principales de la Pagaduría</h2>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="card-content">
+                <p>La pagaduría escolar desempeña diversas funciones cruciales para el día a día de la institución:</p>
+                <ul>
+                    <li>Recaudación y registro de todos los tipos de pagos.</li>
+                    <li>Emisión y gestión de facturación, garantizando la validez fiscal.</li>
+                    <li>Control de la morosidad e implementación de planes de pago flexibles.</li>
+                    <li>Elaboración de reportes financieros periódicos y análisis de datos.</li>
+                    <li>Atención y soporte a la comunidad educativa en todas sus consultas financieras.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="info-card" id="contacto">
+            <div class="card-header">
+                <h2>¿Necesitas Asesoría? Contáctanos</h2>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="card-content">
+                <p>Si tienes alguna pregunta, necesitas asistencia o estás buscando optimizar la gestión financiera de
+                    tu institución, estamos aquí para ayudarte.</p>
+                <p>Puedes comunicarte con nosotros a través de:</p>
+                <ul>
+                    <li><strong>Correo Electrónico:</strong> Thisismypage@gmail.com</li>
+                    <li><strong>Teléfono:</strong> +57 (601) 123-4567</li>
+                    <li><strong>Horario de Atención:</strong> Lunes a Viernes, 8:00 AM - 5:00 PM</li>
+                </ul>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="mailto:info@pagaduriaescolar.com" class="cta-button">Envíanos un Correo</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cardHeaders = document.querySelectorAll('.card-header');
+
+            cardHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const infoCard = header.closest('.info-card');
+                    const content = infoCard.querySelector('.card-content');
+                    const toggleIcon = header.querySelector('.toggle-icon');
+
+                    // Close all other open cards
+                    document.querySelectorAll('.info-card.active').forEach(openCard => {
+                        if (openCard !== infoCard) {
+                            openCard.classList.remove('active');
+                            openCard.querySelector('.card-content').style.maxHeight = '0';
+                            openCard.querySelector('.toggle-icon').textContent = '+';
+                        }
+                    });
+
+                    // Toggle current card
+                    infoCard.classList.toggle('active');
+                    if (infoCard.classList.contains('active')) {
+                        content.style.maxHeight = content.scrollHeight + "px"; // Set max-height to content height
+                        toggleIcon.textContent = '-';
+                    } else {
+                        content.style.maxHeight = '0';
+                        toggleIcon.textContent = '+';
+                    }
+                });
+            });
+        });
+    </script>
     <footer>
         <div class="row-footer">
             <div class="footer-container">
