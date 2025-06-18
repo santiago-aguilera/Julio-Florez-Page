@@ -52,72 +52,98 @@
         </div>
     </nav><br>
     <!--area de trabajo-->
-    <section id="inicio" class="hero">
-        <div class="container">
-            <h1>BIBLIOTECA</h1>
-            <h3>JORGE GAZCA CASTIBLANCO</h3>
-        </div>
-    </section>
-    <div class="container">
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1><center>BIBLIOTECA</center></h1>
+                <h5><center>JORGE GAZCA CASTIBLANCO</center></h5>
+            </div>
+        </section>
         <div class="row">
             <div class="col-md-7">
                 <div class="card mision">
-                    <h1>HISTORIA</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Odio magnam corporis earum adipisci magni repellendus
-                        dignissimos quo consectetur nobis? Itaque voluptas deleniti
-                        nisi ab quae repudiandae porro, aut maiores cumque?.Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit.
-                        Odio magnam corporis earum adipisci magni repellendus
-                        dignissimos quo consectetur nobis? Itaque voluptas deleniti
-                        nisi ab quae repudiandae porro, aut maiores cumque?.Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit.
-                        Odio magnam corporis earum adipisci magni repellendus
-                        dignissimos quo consectetur nobis? Itaque voluptas deleniti
-                        nisi ab quae repudiandae porro, aut maiores cumque?.Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit.
-                        Odio magnam corporis earum adipisci magni repellendus
-                        dignissimos quo consectetur nobis? Itaque voluptas deleniti
-                        nisi ab quae repudiandae porro, aut maiores cumque?.Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit.
-                        Odio magnam corporis earum adipisci magni repellendus
-                        dignissimos quo consectetur nobis? Itaque voluptas deleniti
-                        nisi ab quae repudiandae porro, aut maiores cumque?.
+                    <h1><center>HISTORIA</center></h1>
+                    <p><center>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius 
+                        odio unde quo cum tenetur nisi, laborum quae a labore totam? Ratione cum 
+                        sit iste a reiciendis, at optio? Quibusdam?Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Atque eius 
+                        odio unde quo cum tenetur nisi, laborum quae a labore totam? Ratione cum 
+                        sit iste a reiciendis, at optio? Quibusdam?.
                         <br>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Odio magnam corporis earum adipisci magni repellendus
-                        dignissimos quo consectetur nobis? Itaque voluptas deleniti
-                        nisi ab quae repudiandae porro, aut maiores cumque?.Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit.
-                        Odio magnam corporis earum adipisci magni repellendus
-                        dignissimos quo consectetur nobis? Itaque voluptas deleniti
-                        nisi ab quae repudiandae porro, aut maiores cumque?.Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit.
-                        Odio magnam corporis earum adipisci magni repellendus
-                        dignissimos quo consectetur nobis? Itaque voluptas deleniti
-                        nisi ab quae repudiandae porro, aut maiores cumque?.Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit.
-                        Odio magnam corporis earum adipisci magni repellendus
-                        dignissimos quo consectetur nobis? Itaque voluptas deleniti
-                        nisi ab quae repudiandae porro, aut maiores cumque?.Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit.
-                        Odio magnam corporis earum adipisci magni repellendus
-                        dignissimos quo consectetur nobis? Itaque voluptas deleniti
-                        nisi ab quae repudiandae porro, aut maiores cumque?.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius 
+                        odio unde quo cum tenetur nisi, laborum quae a labore totam? Ratione cum 
+                        sit iste a reiciendis, at optio? Quibusdam?Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Atque eius 
+                        odio unde quo cum tenetur nisi, laborum quae a labore totam? Ratione cum 
+                        sit iste a reiciendis, at optio? Quibusdam?</center>
                     </p>
+                        <button onclick="mostrarContenido()">Ver más</button>
+                        <div id="contenidoOculto" style="display: none;">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab numquam 
+                            culpa, accusamus, minus sunt inventore pariatur cupiditate quibusdam 
+                            incidunt, placeat impedit? Adipisci nam, eaque beatae repudiandae 
+                            temporibus impedit commodi modi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab numquam 
+                            culpa, accusamus, minus sunt inventore pariatur cupiditate quibusdam 
+                            incidunt, placeat impedit? Adipisci nam, eaque beatae repudiandae 
+                            temporibus impedit commodi modi</p>
+                        </div>
+
+                        <script>
+                        function mostrarContenido() {
+                        var x = document.getElementById("contenidoOculto");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                        }
+                        </script>
+                        <button class="ver-mas-boton" onclick="mostrarContenido()">Ver más</button>
+                    <div id="contenido-oculto" class="contenido-oculto">
+                    <p>Este es el contenido adicional.</p>
+                    </div>
+                    
+
+                    <style>
+                    .ver-mas-boton {
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    padding: 10px 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    }
+
+                    .contenido-oculto {
+                    display: none;
+                    margin-top: 10px;
+                    }
+
+                    .contenido-oculto.mostrar {
+                    display: block;
+                    }
+                    </style>
                 </div>
-
-    </div>
+            
             </div>
-
-            <div class="col-md-2">
-                <div class="linea">
-                    <img src="../Image/Biblioteca/libros.png" alt="">
-
+                <div class="col-md-3">
+                    <div class="linea">
+                        <img src="../Image/Biblioteca/libro_2.png" alt="Linea1" class="linea1" width="700" height="400">
+                    </div> 
                 </div>
         </div>
         <hr>
+    </main>
+
+
+
     
+    <!--hata aquii-->
     <footer>
         <div class="row-footer">
             <div class="footer-container">
