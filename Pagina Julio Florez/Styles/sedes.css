@@ -189,7 +189,7 @@ h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 20px;
     box-shadow: inset;
-    background-color: #dde0e3cf;
+    background-color: #ffffffcf;
     
 }
 
@@ -198,16 +198,17 @@ h2{
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #0a7227;
-    background-color: #dde0e3cf;
+    background-color: #ffffffcf;
     border-radius: 10px;
 }
 
-
+.container{
+    padding: 20px;
+}
 .card{
     box-shadow: none;
     border-radius: 20px;
     padding: 20px;
-    padding-bottom: 100px;
 }
 
 
