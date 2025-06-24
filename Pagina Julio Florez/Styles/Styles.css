@@ -27,8 +27,8 @@ body {
     width: auto;
     /* Mantiene la proporción del logo */
     margin-right: 20px;
-    background-color:  #ffffff;
-    
+    background-color: #ffffff;
+
 }
 
 /* Sección derecha (redes + menú) */
@@ -39,7 +39,7 @@ body {
     /* hace que los ul ocupen todo el ancho */
     justify-content: center;
     gap: 8px;
-    background-color:#ffffff;
+    background-color: #ffffff;
     flex-grow: 1;
 }
 
@@ -60,7 +60,7 @@ body {
     padding-bottom: 6px;
     /* menos espacio inferior */
     margin-bottom: 0;
-    
+
 }
 
 .bottom-links ul {
@@ -111,6 +111,7 @@ body {
 .navbar.hide {
     transform: translateY(-100%);
 }
+
 /* Estilo para el enlace principal del dropdown */
 .navbar .nav-link.dropdown-toggle {
     color: #333;
@@ -254,6 +255,55 @@ h2 {
 .accordion-body {
     font-size: 0.95rem;
     color: #444;
+}
+
+/* Cronograma */
+h1 {
+    color: #c0392b;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.3em;
+}
+
+header p {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Contenedor del visor */
+.contenedor {
+    height: 300px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Estilo del iframe */
+.visor-pdf {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Botón de descarga */
+.descarga {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-descarga {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-descarga:hover {
+    background-color: #c0392b;
 }
 
 /* Pie de página */
@@ -450,7 +500,7 @@ footer {
     margin-bottom: 30px;
 }
 
-.circle-card h1{
+.circle-card h1 {
     font-size: 1.5rem;
     font-weight: 600;
     color: #c6302f;
@@ -497,7 +547,8 @@ footer {
     border-bottom: 1px solid #247a37;
     color: #c6302f;
 }
-.circle-card:hover a{
+
+.circle-card:hover a {
     color: #c6302f;
 }
 
