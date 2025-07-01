@@ -55,94 +55,143 @@
     <main>
         <section id="inicio" class="hero">
             <div class="container">
-                <h1><center>BIBLIOTECA</center></h1>
-                <h5><center>JORGE GAZCA CASTIBLANCO</center></h5>
+                <h1>
+                    <center>BIBLIOTECA</center>
+                </h1>
+                <h5>
+                    <center>JORGE GAZCA CASTIBLANCO</center>
+                </h5>
             </div>
         </section>
-        <div class="row">
-            <div class="col-md-7">
-                <div class="card mision">
-                    <h1><center>HISTORIA</center></h1>
-                    <p><center>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius 
-                        odio unde quo cum tenetur nisi, laborum quae a labore totam? Ratione cum 
-                        sit iste a reiciendis, at optio? Quibusdam?Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit. Atque eius 
-                        odio unde quo cum tenetur nisi, laborum quae a labore totam? Ratione cum 
-                        sit iste a reiciendis, at optio? Quibusdam?.
-                        <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius 
-                        odio unde quo cum tenetur nisi, laborum quae a labore totam? Ratione cum 
-                        sit iste a reiciendis, at optio? Quibusdam?Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit. Atque eius 
-                        odio unde quo cum tenetur nisi, laborum quae a labore totam? Ratione cum 
-                        sit iste a reiciendis, at optio? Quibusdam?</center>
-                    </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mision">
+                        <h1>
+                            <center>HISTORIA</center>
+                        </h1>
+                        <p>
+                            <center>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius
+                                odio unde quo cum tenetur nisi, laborum quae a labore totam? Ratione cum
+                                sit iste a reiciendis, at optio? Quibusdam?Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Atque eius
+                                odio unde quo cum tenetur nisi, laborum quae a labore totam? Ratione cum
+                                sit iste a reiciendis, at optio? Quibusdam?.
+                                <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius
+                                odio unde quo cum tenetur nisi, laborum quae a labore totam? Ratione cum
+                                sit iste a reiciendis, at optio? Quibusdam?Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Atque eius
+                                odio unde quo cum tenetur nisi, laborum quae a labore totam? Ratione cum
+                                sit iste a reiciendis, at optio? Quibusdam?
+                            </center>
+                        </p>
                         <button onclick="mostrarContenido()">Ver más</button>
                         <div id="contenidoOculto" style="display: none;">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab numquam 
-                            culpa, accusamus, minus sunt inventore pariatur cupiditate quibusdam 
-                            incidunt, placeat impedit? Adipisci nam, eaque beatae repudiandae 
-                            temporibus impedit commodi modi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab numquam 
-                            culpa, accusamus, minus sunt inventore pariatur cupiditate quibusdam 
-                            incidunt, placeat impedit? Adipisci nam, eaque beatae repudiandae 
-                            temporibus impedit commodi modi</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab numquam
+                                culpa, accusamus, minus sunt inventore pariatur cupiditate quibusdam
+                                incidunt, placeat impedit? Adipisci nam, eaque beatae repudiandae
+                                temporibus impedit commodi modi Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Ab
+                                numquam
+                                culpa, accusamus, minus sunt inventore pariatur cupiditate quibusdam
+                                incidunt, placeat impedit? Adipisci nam, eaque beatae repudiandae
+                                temporibus impedit commodi modi</p>
                         </div>
-
-                        <script>
-                        function mostrarContenido() {
-                        var x = document.getElementById("contenidoOculto");
-                        if (x.style.display === "none") {
-                            x.style.display = "block";
-                        } else {
-                            x.style.display = "none";
-                        }
-                        }
-                        </script>
-                        <button class="ver-mas-boton" onclick="mostrarContenido()">Ver más</button>
-                    <div id="contenido-oculto" class="contenido-oculto">
-                    <p>Este es el contenido adicional.</p>
                     </div>
-                    
-
-                    <style>
-                    .ver-mas-boton {
-                    background-color: #4CAF50;
-                    border: none;
-                    color: white;
-                    padding: 10px 20px;
-                    text-align: center;
-                    text-decoration: none;
-                    display: inline-block;
-                    font-size: 16px;
-                    margin: 4px 2px;
-                    cursor: pointer;
-                    border-radius: 5px;
-                    }
-
-                    .contenido-oculto {
-                    display: none;
-                    margin-top: 10px;
-                    }
-
-                    .contenido-oculto.mostrar {
-                    display: block;
-                    }
-                    </style>
                 </div>
-            
-            </div>
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <div class="linea">
-                        <img src="../Image/Biblioteca/libro_2.png" alt="Linea1" class="linea1" width="700" height="400">
-                    </div> 
+                        <img src="../Image/Biblioteca/libro_2.png" alt="Linea1" class="linea1">
+                    </div>
                 </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container my-5">
+            <div class="row justify-content-center g-4">
+
+                <!-- SERVICIOS -->
+                <div class="col-md-6">
+                    <div class="card h-100 text-center p-4 shadow-sm">
+                        <h4 class="card-title mb-3">SERVICIOS</h4>
+                        <ul class="list-unstyled text-start">
+                            <li>Préstamo de libros físicos</li>
+                            <li>Acceso a computadoras e internet</li>
+                            <li>Zona de lectura individual o grupal</li>
+                            <li>Impresiones y fotocopias</li>
+                            <li>Reserva de espacios para estudio</li>
+                            <li>Asesoría en búsqueda bibliográfica</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- REGLAS -->
+                <div class="col-md-6">
+                    <div class="card h-100 text-center p-4 shadow-sm">
+                        <h4 class="card-title mb-3">REGLAS</h4>
+                        <ul class="list-unstyled text-start">
+                            <li>Mantener el silencio</li>
+                            <li>No usar celular en zonas de lectura</li>
+                            <li>Prohibido consumir alimentos o bebidas</li>
+                            <li>Devolver los libros en la fecha acordada</li>
+                            <li>Respetar a otros usuarios y al personal</li>
+                            <li>Presentar carné institucional para préstamos</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
         <hr>
+        <br>
+        <div class="container">
+            <h1>Catálogo de Biblioteca</h1>
+
+            <input type="text" id="buscador" placeholder="Buscar por título..." />
+
+            <div id="catalogo" class="grid">
+                <!-- Libros -->
+                <div class="libro">
+                    <h3>Cien Años de Soledad</h3>
+                    <p>Gabriel García Márquez</p>
+                </div>
+                <div class="libro">
+                    <h3>El Principito</h3>
+                    <p>Antoine de Saint-Exupéry</p>
+                </div>
+                <div class="libro">
+                    <h3>1984</h3>
+                    <p>George Orwell</p>
+                </div>
+                <div class="libro">
+                    <h3>Don Quijote de la Mancha</h3>
+                    <p>Miguel de Cervantes</p>
+                </div>
+                <div class="libro">
+                    <h3>Crónica de una Muerte Anunciada</h3>
+                    <p>Gabriel García Márquez</p>
+                </div>
+            </div>
+        </div>
+        <br><hr>
+        <div class="container">
+            <div class="bibliotecas">
+                <h1>Bibliotecas Digitales BOGOTA</h1>
+                <p>Te daremos una serie de links para que puedas ingresar a unos bibliotecas digitales y leer desde tu casa:</p>
+                <ul>
+                    <li><a href="https://bibliotecadigitaldebogota.gov.co">Biblioteca Digital de Bogotá (BibloRed):</a><p>acceso abierto a libros, audiolibros, videos, música y más. Excelente espacio cultural y educativo.</p></li>
+                    <li><a href="https://www.bibliotecadigital.org.co">Biblioteca Digital de Colombia:</a><p>acceso a una amplia colección de libros, revistas y documentos digitales de diversas temáticas. Ideal para estudiantes e investigadores.</p></li>
+                </ul>
+            </div>
+            </ul>
+        </div>
     </main>
 
 
 
-    
+
     <!--hata aquii-->
     <footer>
         <div class="row-footer">
@@ -201,7 +250,8 @@
     </footer>
     <!--Enlaze de js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="JS/Scroll.js"></script>
+    <script src="../JS/Biblioteca.js"></script>
+    <script src="../JS/Buscador.js"></script>
 </body>
 
 </html>

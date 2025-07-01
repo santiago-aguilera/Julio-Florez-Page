@@ -39,8 +39,8 @@ body {
     width: auto;
     /* Mantiene la proporción del logo */
     margin-right: 20px;
-    background-color:  #ffffff;
-    
+    background-color: #ffffff;
+
 }
 
 /* Sección derecha (redes + menú) */
@@ -51,7 +51,7 @@ body {
     /* hace que los ul ocupen todo el ancho */
     justify-content: center;
     gap: 8px;
-    background-color:#ffffff;
+    background-color: #ffffff;
     flex-grow: 1;
 }
 
@@ -72,7 +72,7 @@ body {
     padding-bottom: 6px;
     /* menos espacio inferior */
     margin-bottom: 0;
-    
+
 }
 
 .bottom-links ul {
@@ -123,6 +123,7 @@ body {
 .navbar.hide {
     transform: translateY(-100%);
 }
+
 /* Estilo para el enlace principal del dropdown */
 .navbar .nav-link.dropdown-toggle {
     color: #333;
@@ -155,6 +156,7 @@ body {
 .nav-link:hover {
     color: #c6302f !important;
 }
+
 .navbar {
     box-shadow: var(--shadow);
     padding: 1rem 2rem;
@@ -179,6 +181,28 @@ body {
     color: #c6302f;
 }
 
+.ver-mas-boton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contenido-oculto {
+    display: none;
+    margin-top: 10px;
+}
+
+.contenido-oculto.mostrar {
+    display: block;
+}
 
 
 
@@ -208,6 +232,7 @@ footer {
     padding: 1.5rem 0;
     font-size: 0.9rem;
 }
+
 /* Footer styles */
 
 .footer {
@@ -322,21 +347,25 @@ footer .container {
 }
 
 .hero {
-    background-color: #8b061a; /* Blanco rosado muy suave */
-    padding: 100px 0;
+    background-color: #8b061a;
+    /* Blanco rosado muy suave */
+    padding: 20px;
     text-align: center;
     color: var(--color-text);
 }
+
 .hero h1 {
     font-size: 5.0em;
     color: white;
     margin-bottom: 20px;
 }
+
 .hero h5 {
     font-size: 1.5em;
     color: white;
     margin-bottom: 20px;
 }
+
 .card {
     background: linear-gradient(135deg, #ffffff, #f9f9ff);
     border-radius: 16px;
@@ -351,7 +380,7 @@ footer .container {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #c6302f;
-    background: linear-gradient(to right,#c6302f, #9ea8a8);
+    background: linear-gradient(to right, #c6302f, #9ea8a8);
     display: inline-block;
     padding: 0.2rem 1rem;
     border-radius: 8px;
@@ -381,6 +410,193 @@ footer .container {
 }
 
 
+#contenidoOculto p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: center;
+}
+
+.card {
+    border: none;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+
+.col-md-6:first-child .card-title {
+    color: #28a745;
+    font-size: 3rem;
+}
+
+
+.col-md-6:last-child .card-title {
+    color: #dc3545;
+    font-size: 3rem;
+}
+
+/* Lista de contenido */
+.card ul {
+    padding-left: 0;
+}
+
+.card ul li {
+    list-style: none;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+/* Íconos estilo escolar */
+.card ul li::before {
+    content: '📌  ';
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+}
+
+/* Responsive tipografía */
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card ul li {
+        font-size: 1rem;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #c6302f;
+    margin-bottom: 30px;
+}
+
+#buscador {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.libro {
+    background: #fff;
+    padding: 15px;
+    border-left: 5px solid #28a745;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+
+.libro:hover {
+    transform: translateY(-4px);
+}
+
+.libro h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.libro p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #c0392b;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+ul li a:hover {
+    color: #c02727;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.bibliotecas h1 {
+    color: #c0392b;
+    /* rojo institucional */
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.bibliotecas p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.bibliotecas ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.bibliotecas ul li {
+    background-color: #f4fdf7;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.bibliotecas ul li:hover {
+    background-color: #eaf9f0;
+}
+
+.bibliotecas ul li p {
+    margin-top: 5px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
 
 .card h1 {
     font-size: 2.5rem;
@@ -393,15 +609,17 @@ footer .container {
     line-height: 1.8;
     color: #444;
 }
-.linea{
-    max-height: 1100px; 
-    width: 900px;      /* <<--- Esto define el alto visible */
-    overflow-y: auto;        /* <<--- Habilita el scroll vertical */
+
+.linea {
+    width: 80px;
+    /* <<--- Esto define el alto visible */
     padding: 20px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-light);
     background-color: var(--color-light-bg);
-}.container .icon {
+}
+
+.container .icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -450,6 +668,7 @@ footer .container {
     top: -70px;
     pointer-events: none;
 }
+
 .ver-mas-boton {
     background-color: #4CAF50;
     border: none;
@@ -462,7 +681,7 @@ footer .container {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
- }
+}
 
 .contenido-oculto {
     display: none;
