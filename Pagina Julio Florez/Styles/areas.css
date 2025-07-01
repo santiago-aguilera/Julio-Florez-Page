@@ -179,6 +179,119 @@ body {
     color: #c6302f;
 }
 
+/* Estilo general para todas las filas */
+.row {
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+/* Estilo para las imágenes */
+.simbolo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.simbolo img:hover {
+    transform: scale(1.03);
+}
+
+/* Texto general */
+.text {
+    background-color: #fdfdfd;
+    padding: 1.5rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.text h5.card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #c6302f;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.text p.card-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+}
+
+/* Quitar center tags para usar text-align en CSS */
+.text center,
+p center,
+h5 center {
+    display: contents;
+}
+
+
+
+
+.tab-pane {
+    background-color: #f9f9f9; /* Fondo suave */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Párrafos dentro de cada tab */
+.tab-pane p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+/* Estilo específico para Educación Inicial */
+#inicial {
+    border-left: 6px solid #8e44ad;
+}
+
+/* Saberes Sociales */
+#sociales {
+    border-left: 6px solid #2c3e50;
+}
+
+/* Matemático */
+#matematico {
+    border-left: 6px solid #e67e22;
+}
+
+/* Comunicación */
+#comunicacion {
+    border-left: 6px solid #27ae60;
+}
+
+/* Científico - Tecnológico */
+#cientifico {
+    border-left: 6px solid #2980b9;
+}
+
+/* Especializado y Proyecto de Vida */
+#proyecto {
+    border-left: 6px solid #c0392b;
+}
+
+/* Opcional: mejora visual de los tabs */
+.nav-tabs .nav-link {
+    font-weight: 500;
+    color: #555;
+    border-radius: 0;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #0d6efd;
+    color: #fff;
+    font-weight: bold;
+    border-color: transparent;
+}
+
 
 /* === FOOTER === */
 footer {
@@ -321,6 +434,15 @@ footer .container {
 .introducion{ 
     text-align: center;
     border-radius: 20px;
-    background-color: rgb(204, 204, 204);
+    background-color: #ca2727;
     padding: 30px;
+}
+.introducion h1 {
+    color: yellow;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.introducion{
+    color: #ffffff;
+    margin-top: 0.5rem;
 }
