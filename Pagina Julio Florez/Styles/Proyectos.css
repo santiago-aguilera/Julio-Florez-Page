@@ -636,14 +636,54 @@ info-0{
     margin: 120px;
     
 }
-.hero{
+.proyectos-galeria {
+  padding: 2rem;
+  background-color: #fefefe;
+  font-family: 'Segoe UI', sans-serif;
 }
-.hero h2{
-    font-size: xx-large;
-    color: cornsilk;
-     background-color: rgb(151, 47, 47);
 
+.titulo-seccion {
+  color: #c0392b;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  font-weight: bold;
 }
-.hero p{
-    
+
+.intro {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 2rem;
 }
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-title {
+  color: #27ae60;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
