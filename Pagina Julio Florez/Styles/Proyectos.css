@@ -27,8 +27,8 @@ body {
     width: auto;
     /* Mantiene la proporción del logo */
     margin-right: 20px;
-    background-color:  #ffffff;
-    
+    background-color: #ffffff;
+
 }
 
 /* Sección derecha (redes + menú) */
@@ -39,7 +39,7 @@ body {
     /* hace que los ul ocupen todo el ancho */
     justify-content: center;
     gap: 8px;
-    background-color:#ffffff;
+    background-color: #ffffff;
     flex-grow: 1;
 }
 
@@ -60,7 +60,7 @@ body {
     padding-bottom: 6px;
     /* menos espacio inferior */
     margin-bottom: 0;
-    
+
 }
 
 .bottom-links ul {
@@ -111,6 +111,7 @@ body {
 .navbar.hide {
     transform: translateY(-100%);
 }
+
 /* Estilo para el enlace principal del dropdown */
 .navbar .nav-link.dropdown-toggle {
     color: #333;
@@ -450,7 +451,7 @@ footer {
     margin-bottom: 30px;
 }
 
-.circle-card h1{
+.circle-card h1 {
     font-size: 1.5rem;
     font-weight: 600;
     color: #c6302f;
@@ -497,7 +498,8 @@ footer {
     border-bottom: 1px solid #247a37;
     color: #c6302f;
 }
-.circle-card:hover a{
+
+.circle-card:hover a {
     color: #c6302f;
 }
 
@@ -632,58 +634,59 @@ footer .container {
     top: -70px;
     pointer-events: none;
 }
-info-0{
+
+info-0 {
     margin: 120px;
-    
+
 }
+
 .proyectos-galeria {
-  padding: 2rem;
-  background-color: #fefefe;
-  font-family: 'Segoe UI', sans-serif;
+    padding: 2rem;
+    background-color: #fefefe;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .titulo-seccion {
-  color: #c0392b;
-  margin-bottom: 1rem;
-  font-size: 2.2rem;
-  font-weight: bold;
+    color: #c0392b;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-weight: bold;
 }
 
 .intro {
-  color: #444;
-  font-size: 1rem;
-  margin-bottom: 2rem;
+    color: #444;
+    font-size: 1rem;
+    margin-bottom: 2rem;
 }
 
 .card {
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-  overflow: hidden;
-  height: 100%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    height: 100%;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .card-img-top {
-  max-height: 200px;
-  object-fit: cover;
-  width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .card-title {
-  color: #27ae60;
-  font-weight: 700;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .card-text {
-  font-size: 0.95rem;
-  color: #555;
+    font-size: 0.95rem;
+    color: #555;
 }
-
