@@ -228,18 +228,21 @@ header p {
 .container {
     max-width: 800px;
     margin: 0 auto 4rem auto; /* Más espacio abajo para evitar que el contenido se pegue al borde */
-    padding: 0 1.5rem;
+    padding: 2rem;
     flex-grow: 1; /* Permite que el contenedor ocupe el espacio disponible */
+    overflow: visible; /* Permite que el contenido se desborde si es necesario */
 }
 
 .info-card {
     background-color: var(--card-bg-color);
     border: 1px solid var(--card-border-color);
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem; /* Espacio entre tarjetas */
     overflow: hidden; /* Asegura que el contenido oculto no se vea */
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.4s ease;
+    height: auto; /* Permite que la tarjeta ajuste su altura según el contenido */
 }
 
 .info-card:hover {
@@ -286,6 +289,9 @@ header p {
     overflow: hidden;
     padding: 0 2rem; /* El padding horizontal siempre visible */
     transition: max-height 0.4s ease-out, padding-top 0.4s ease-out, padding-bottom 0.4s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
 }
 
 .info-card.active .card-content {
